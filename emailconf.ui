@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configuration</class>
+ <widget class="QWidget" name="configuration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>361</width>
+    <height>249</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Email Configuration</string>
+  </property>
+  <widget class="QTabWidget" name="Notification">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>361</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Host</string>
+    </attribute>
+    <widget class="QWidget" name="formWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>40</y>
+       <width>341</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelsmtp">
+        <property name="text">
+         <string>SMTP Server</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="smtpline"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="emaillbl">
+        <property name="text">
+         <string>EMAIL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="emailine"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="passlabl">
+        <property name="text">
+         <string>PASSWORD</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="passwdline"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="hostsave">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>150</y>
+       <width>41</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SAVE</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Target</string>
+    </attribute>
+    <widget class="QPushButton" name="targetbtn">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>140</y>
+       <width>41</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SAVE</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="formWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>311</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="emllbl">
+        <property name="text">
+         <string>EMAIL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="emailln"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="thlbl">
+        <property name="text">
+         <string>THRESHOLD(cpu /mem</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="spinBoxthreshold"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="intervallbl">
+        <property name="text">
+         <string>INTERVALS(sec)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="intervalsln"/>
+      </item>
+     </layout>
+    </widget>
+    <zorder>formWidget</zorder>
+    <zorder>targetbtn</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
