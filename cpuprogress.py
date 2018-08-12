@@ -49,7 +49,7 @@ class ThreadClass(QtCore.QThread):
                         if memval >= self.threshold:
                             genm.SendMail()
                             time.sleep(self.sleep)
-                        memval = sysinfo.memory_usage_psutil()
+                            memval = sysinfo.memory_usage_psutil()
                         cpval = sysinfo.GetCpu_usage()
                         if cpval >= self.threshold:
                             genm.SendMail()
