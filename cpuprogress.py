@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 from emailconf import*
@@ -49,7 +48,7 @@ class ThreadClass(QtCore.QThread):
                         if memval >= self.threshold:
                             genm.SendMail()
                             time.sleep(self.sleep)
-                            memval = sysinfo.memory_usage_psutil()
+                        memval = sysinfo.memory_usage_psutil()
                         cpval = sysinfo.GetCpu_usage()
                         if cpval >= self.threshold:
                             genm.SendMail()
@@ -60,7 +59,6 @@ class ThreadClass(QtCore.QThread):
                         time.sleep(60)
                         self.errormsg(self.quit())
                         time.sleep(3600)
-
 
 
     def errormsg(self):
